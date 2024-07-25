@@ -72,6 +72,7 @@ if (isset($_POST["bookSlug"])) {
             text-align: justify;
             font-family: 'Times New Roman', Times, serif;
         }
+  
     </style>
 </head>
 
