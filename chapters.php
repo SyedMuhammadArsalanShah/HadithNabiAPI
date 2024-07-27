@@ -20,12 +20,23 @@ if (isset($_POST["bookSlug"])) {
     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #fbfbf8;
+            background-color: #525252;
             text-align: center;
         }
         .arabic {
             font-family: 'Amiri Quran', serif;
            
+        }
+        .arabic1 {
+            font-family: 'jameel', serif;
+            /* margin-bottom: 10px; */
+            background-color: #d4d4bc;
+            border-radius: 10px;
+            padding: 10px;
+            color: teal;
+
+
+
         }
         @font-face {
             font-family: "jameel";
@@ -55,7 +66,8 @@ if (isset($_POST["bookSlug"])) {
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mb-4">
+        <h1 class="arabic1">ابواب الاحادیث</h1>
         <div class="row">
             <?php
             if (isset($response["chapters"])) {
