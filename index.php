@@ -49,6 +49,8 @@ body{
 
 <body>
 
+<?php include'navbar.php'?>
+
     <div class="container">
     <h1 class="arabic1">کتب الاحادیث</h1>
         <div class="row">

@@ -66,6 +66,7 @@ if (isset($_POST["bookSlug"])) {
 </head>
 
 <body>
+<?php include'navbar.php'?>
     <div class="container mb-4">
         <h1 class="arabic1">ابواب الاحادیث</h1>
         <div class="row">

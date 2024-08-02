@@ -77,7 +77,7 @@ if (isset($_POST["bookSlug"])) {
 </head>
 
 <body>
-
+<?php include'navbar.php'?>
     <div class="container">
 
         <h1 class="chapter"><?php echo " $chapterUrdu &nbsp;&nbsp; | &nbsp;&nbsp; $chapterArabic &nbsp;&nbsp;"; ?></h1>
@@ -112,11 +112,17 @@ if (isset($_POST["bookSlug"])) {
             echo '<p class="urdu" ><strong class="urdu" > ' . $value["urduNarrator"] . '</strong></p>';
             echo '<h6 class="urdu">' . $value["headingUrdu"] . '</h6>';
             echo '<blockquote class="urdu">' . $value["hadithUrdu"] . '</blockquote>';
+         
+          
             echo '</div>';
             echo '</div>';
-
-
             echo '</div>';
+            if( $value['status'] == 'Sahih') {
+                echo '<span class="badge text-bg-success"> Hadith Status : ' . $value["status"] . '</span>';}
+                elseif( $value['status'] == 'Da`eef') {
+                    echo '<span class="badge text-bg-danger"> Hadith Status : ' . $value["status"] . '</span>';}
+                  elseif( $value['status'] == 'Hasan') {
+                        echo '<span class="badge text-bg-warning"> Hadith Status : ' . $value["status"] . '</span>';}
 
             echo "<hr>";
         }
