@@ -1,0 +1,105 @@
+.box{
+    background: linear-gradient(to right,#485563,#7f92a6);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.box:before,
+.box:after,
+.box .box-content{
+    content: "";
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.box:after{
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+}
+.box .box-content{
+    top: 45px;
+    left: 45px;
+    right: 45px;
+    bottom: 45px;
+    z-index: 1;
+}
+.box:hover:before,
+.box:hover:after{ transition-delay: 0.1s; }
+.box:hover:before,
+.box:hover:after,
+.box:hover .box-content{ transform: scale(1); }
+.box img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+.box:hover img{
+    opacity: 0.3;
+    transform: scale(1);
+}
+.box .content{
+    color: #485563;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.box:hover .content{
+    opacity: 1;
+}
+.box .title{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 3px;
+}
+.box .post{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+    display: block;
+}
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box .icon li{
+    display: inline-block;
+    margin: 0 2px;
+}
+.box .icon li a{
+    color: #485563;
+    background: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+    transition: all .35s;
+}
+.box .icon li a:hover{
+    color: #fff;
+    background: #f92f2f;
+}
+@media only screen and (max-width:990px){
+    .box{ margin: 0 0 30px; }
+}
