@@ -46,7 +46,7 @@ if (isset($_POST["bookSlug"])) {
             font-family: 'Times New Roman', Times, serif;
         }
         .card {
-            background-image: url("images/i4.jpg");
+            background-image: url("assets/images/i4.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }

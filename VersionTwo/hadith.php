@@ -40,7 +40,7 @@ if (isset($_POST["bookSlug"])) {
 
         @font-face {
             font-family: "jameel";
-            src: url(fonts/jameel.ttf);
+            src: url(assets/fonts/jameel.ttf);
         }
 
         .urdu {
